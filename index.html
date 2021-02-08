@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!-- saved from url=(0035)https://visual-megaphone.github.io/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Visual Megaphone</title>
+    <link rel="stylesheet" type="text/css" href="static/stylesheet.css" media="screen">
+    <style>
+        .grid {
+          display: grid;
+          grid-template-columns: repeat(3,1fr);
+          grid-gap: 20px;
+        }
+        .wrapper {
+          margin: 0 auto;
+          width: 60%;
+        }
+
+        .cards {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+        }
+
+        .cards li {
+          border: 2px solid #490A3D;
+          border-radius:5px;
+          background-color: #BD1550;
+          color: #fff;
+          flex: 1 1 200px;
+        }
+
+        .cards h2 {
+          background-color: #490A3D;
+          margin: 0;
+          padding: 10px;
+        }
+
+        .cards p {
+          padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header-wrapper">
+            <h1>המגפון החזותי</h1>
+            <form id="registration" method="get" onsubmit="window.location.assign(&#39;https://visual-megaphone.github.io/main.html&#39;);">
+                <label for="fname">איך לקרוא לך</label>
+                <input type="text" name="fname">
+                <label for="ship-city">מאיפה בעולם</label>
+                <input type="text" name="ship-city">
+            </form>
+        </div>
+
+        <div class="submit-wrapper">
+            <input id="submitBtn" name="submit" type="submit" form="registration" value="המשך">
+            <label for="submit">אנחנו צריכות גישה למיקרופון שלך
+כדי שנוכל לצעוק יחד גם מרחוק
+מבטיחות לא לשמור מידע אצלינו</label>
+        </div>
+
+        <img class="pink-frontier" alt="pink frontier" src="./static/logopinkfront.svg">
+    </div>
+
+<script>
+    let btn = document.getElementById("submitBtn");
+    btn.addEventListener("click", evt => {
+        evt.preventDefault();
+        window.location.replace("https://visual-megaphone.github.io/main");
+        return false;
+    })
+</script>
+</body></html>

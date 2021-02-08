@@ -1,0 +1,101 @@
+@font-face {
+    font-family: Haim;
+    src: url("./media/Haim-Medium.e5694826.otf");
+}
+
+body {
+    background: #FF00DA;
+    font-family: Haim, sans-serif;
+    color: white;
+    text-align: right;
+    overflow-y: hidden;
+    height: 100vh;
+}
+
+.container {
+    display: block;
+    position: relative;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+    direction: rtl;
+    margin: 0 5% 5% 3%;
+}
+
+.header-wrapper {
+    display: block;
+}
+
+h1 {
+    font-size: 111pt;
+    margin: .3em 0 .07em;
+    line-height: .9em;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+}
+
+label {
+    font-size: 45pt;
+    margin-top: 20px;
+}
+
+input {
+    display: block;
+    width: 25ch;
+    height: 1.5em;
+    font-family: Haim, sans-serif;
+    color: #FF00DA;
+    font-size: 30px;
+    padding-right: 1ch;
+    border: None;
+}
+
+input:focus {
+    outline: None;
+}
+
+.submit-wrapper {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    flex-direction: row;
+    justify-self: flex-end;
+    margin-bottom: 6%;
+}
+
+.submit-wrapper input {
+    border: 6px white solid;
+    background: #FF00DA;
+    width: 200px;
+    height: 65px;
+    color: white;
+    transition: background-color 300ms, color 300ms;
+}
+
+.submit-wrapper input:hover {
+    background: #FFF;
+    color: #FF00DA;
+}
+
+.submit-wrapper label {
+    font-size: 14pt;
+    margin: 0 3ch 0 0;
+    padding: 0;
+    width: 26ch;
+}
+
+.pink-frontier {
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin-bottom: 6%;
+    max-height: 150px;
+    max-width: 100px;
+}
